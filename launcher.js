@@ -1,19 +1,23 @@
+import React from "react";
+import { AppRegistry } from "react-native";
+import { StackNavigator } from "react-navigation";
+import Tab from "./app/Tab";
 
-import React from 'react';
-import {
-    AppRegistry,
-    View,
-    Text,
-    TouchableHighlight,
-    Navigator
-} from 'react-native';
-import {StackNavigator} from 'react-navigation';
-import LoginPage from './screens/LoginPage';
-import HomePage from './screens/HomePage';
+const StackRouteConfigs = {
+  Tab: { screen: Tab }
+};
 
-const AppNavigation = StackNavigator({
-    Login: {screen: LoginPage},
-    Home: {screen: HomePage}
-});
+const StackNavigatorConfigs = {
+  navigationOptions: {
+    headerStyle: {
+      backgroundColor: "#fff",
+      height: 44
+    }
+  }
+};
+const AppStackNavigator = StackNavigator(
+  StackRouteConfigs,
+  StackNavigatorConfigs
+);
 
-AppRegistry.registerComponent('aierLifeRN', () => AppNavigation);
+AppRegistry.registerComponent("aierLifeRN", () => AppStackNavigator);
