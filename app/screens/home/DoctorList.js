@@ -12,7 +12,8 @@ import GlobalStyles from "../../components/GlobalStyles";
 
 export default class DoctorList extends Component {
   static navigationOptions = {
-    title: "爱尔诊所后宰门诊室"
+    title: "爱尔诊所后宰门诊室",
+    tabBarVisible: false
   };
 
   constructor(props) {
@@ -48,6 +49,8 @@ export default class DoctorList extends Component {
 
   _onRowPress(rowID) {
     console.log(rowID);
+    const navigation = this.props.navigation;
+    navigation.navigate("DoctorDetails", {});
   }
   _renderRow(rowData, rowID, sectionID) {
     return (

@@ -11,7 +11,8 @@ let UserCenterScreen = StackNavigator(
     navigationOptions: {
       headerStyle: {
         backgroundColor: "#fff",
-        height: 44
+        height: 44,
+        elevation: 1
       },
       headerTitleStyle: {
         fontSize: 16,

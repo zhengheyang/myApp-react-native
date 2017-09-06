@@ -16,6 +16,11 @@ export default class HomePage extends Component {
     title: "爱尔生活"
   };
 
+  componentWillMount() {
+    // console.log("componentWillMount");
+    // this.props.navigation.navigate("Test", {});
+  }
+
   constructor(props) {
     super(props);
     var ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });

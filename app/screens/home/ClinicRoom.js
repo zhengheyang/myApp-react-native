@@ -13,7 +13,8 @@ import GlobalStyles from "../../components/GlobalStyles";
 
 export default class ClinicRoom extends Component {
   static navigationOptions = {
-    title: "诊室"
+    title: "诊室",
+    tabBarVisible: false
   };
 
   constructor(props) {
