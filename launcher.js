@@ -1,3 +1,4 @@
+
 import React from "react";
 import { AppRegistry } from "react-native";
 import { StackNavigator, TabBarBottom, TabNavigator } from "react-navigation";
@@ -68,3 +69,4 @@ const TabNavigatorConfigs = {
 
 const Tab = TabNavigator(TabRouteConfigs, TabNavigatorConfigs);
 AppRegistry.registerComponent("aierLifeRN", () => Tab);
+
